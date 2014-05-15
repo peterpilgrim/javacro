@@ -1,0 +1,162 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 20px;
+  margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+.navbar-wrapper .navbar {
+
+}
+
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+  border: 0;
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+     -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+          box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+
+/* Downsize the brand/project name a bit */
+.navbar .brand {
+  padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+  padding: 15px 20px;
+}
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+  margin-top: 10px;
+}
+
+
+.mainContent {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px; 
+  margin-bottom: 10px;
+}
+
+.headerContent {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
+
+.footerContent {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.blau {
+    color: #00007F;
+}
+
+.featurette-divider {
+    width: 100%;
+}
+
+.subfeaturette-divider {
+    width: 85%;
+}
+
+.done-true {
+    text-decoration: line-through;
+    color: #52101d;
+}
+
+.form-headline {
+    width: 98%;
+    margin: 5px auto 5px auto;
+}
+
+.wizard-form {
+    width: 98%;
+    margin: 25px auto 5px auto;
+    border-color: #00007F;
+    border-width: 1px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.wizard-wrapper {
+    width: 98%;
+    margin: 5px auto 5px auto;
+}
+
+
+#navbarLogo {
+    margin: 16px 20px 10px 20px;
+    width: 160px;
+}
+
+@media (max-width: 580px) {
+    #navbarLogo {
+        margin: 16px 10px 10px 10px;
+        width: 80px;
+    }
+}
+
+#container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainContent {
+    width: 100%;
+}
+
+#headerContent {
+    width: 100%;
+    margin: 0px;
+}
+
+#footerContent {
+    width: 100%;
+    margin: 0px;
+}
+
+.form-error {
+    color: darkred;
+}
+
+.info-block {
+    width: 90%;
+    overflow: auto;
+    min-height: 32px;
+    color: #000000;
+    padding-left: 32px;
+    padding-right: 48px;
+    background-color: #32c53e;
+    border: 1px solid #009900;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}

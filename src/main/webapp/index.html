@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en" xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Demonstration Application :: scala-javaee-1.0-SNAPSHOT</title>
+        <meta name="description" content="Demonstration of a Java EE HTML5 application for the digital web" >
+        <meta name="author" content="Author is Simon Templaton by Peter Pilgrim">
+
+        <link href="styles/bootstrap.css" rel="stylesheet">
+        <link href="styles/bootstrap-responsive.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="headerContent">
+                <div class="navbar navbar-inverse">
+                    <div class="navbar-inner">
+                        <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <img id="navbarLogo" class="pull-left" src="images/javacro14-hor-sh-963x112.png" />
+                        <a class="brand" href="#">Demo App</a>
+                        <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                        <div class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#" >About</a></li>
+                                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Demo Application <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://github.com/peterpilgrim">Github</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="http://www.packtpub.com/java-ee-7-developer-handbook/book">Book</a></li>
+                                        <li><a href="http://www.amazon.com/Java-EE-7-Developer-Handbook/dp/1849687943/ref=sr_1_1?s=books&ie=UTF8&qid=1380468215&sr=1-1&keywords=java+ee+7+developer+handbook">Amazon USA</a></li>
+                                        <li><a href="http://www.amazon.co.uk/Java-EE-Developer-Handbook-ebook/dp/B00FDLOF66/ref=sr_1_cc_1?s=aps&ie=UTF8&qid=1380468106&sr=1-1-catcorr&keywords=java+ee+7+developer+handbook">Amazon UK</a></li>
+                                        <li class="nav-header">Friends</li>
+                                        <li><a href="http://tlcpowertalk.com/">TLC Powertalk</a></li>
+                                        <li><a href="https://java-champions.java.net/">Java Champions</a></li>
+                                        <li><a href="http://www.jfrog.com/home/v_artifactory_opensource_overview">Artifactory</a></li>
+                                        <li><a href="http://jenkins-ci.org//">Jenkins</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div><!-- /.navbar-inner -->
+                </div><!-- /.navbar -->
+            </div><!-- headerContent -->
+
+            <div class="mainContent">
+
+                <h1> Application Web Page </h1>
+
+                <p>
+                    This is your web page for a demo application.
+                </p>
+
+                <p>
+                    Group = <span class="blau">uk.co.xenonique.javacro</span> <br/>
+                    ArtifactId = <span class="blau" >scala-javaee</span> <br/>
+                    Version = <span class="blau">1.0-SNAPSHOT</span> <br/>
+                </p>
+
+                <hr class="subfeaturette-divider" />
+
+                <h2> Test JAX-RS Scala Services Endpoints</h2>
+                <ul>
+                    <li>
+                        <a class="btn-large btn" href="rest/books"> GET BOOK LIST</a>
+                    </li>
+                    <li>
+                        <a class="btn-large btn" href="rest/alldata"> GET ALL DATA</a>
+                    </li>
+                    <li>
+                        <a class="btn-large btn" href="rest/users"> LIST REGISTERED USERS</a>
+                    </li>
+                    <li>
+                        <a class="btn-large btn" href="rest/users/jobs"> GET STEVE JOBS </a>
+                    </li>
+                    <li>
+                        <a class="btn-large btn" href="infoServlet">  INFO SERVLET </a>
+                    </li>
+                    <li>
+                        <a class="btn-large btn" href="form1.xhtml"> CONVERSATIONAL SCOPE </a>
+                    </li>
+                </ul>
+
+                <p>
+                    <img src="images/javacro14-hor-sh-963x112.png" />
+                </p>
+
+
+                <hr class="subfeaturette-divider" />
+
+                <div ng-controller="HelloWorldController">
+                    <h2> Hello {{name}}! </h2>
+                    <input type="text" ng-model="name" />
+
+                    <ul ng-repeat="fruit in fruits">
+                        <li>{{ fruit.name }}</li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col-sd-6">
+                        <img class="pull-left"  src="images/IMG_0491_career_top_gun.jpg" width="40%"/>
+                    </div>
+                    <div class="col-sd-6">
+                        <img class="pull-right" src="images/IMG_0492_nobody_got_fired.jpg" width="40%"/>
+                    </div>
+                </div>
+
+                <h3> More Demo Content </h3>
+
+                <div>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque ultricies venenatis.
+                    Phasellus eu urna sit amet mi cursus gravida. Pellentesque lectus leo, sollicitudin quis risus at,
+                    feugiat sollicitudin justo. Duis elementum ultrices risus in condimentum. Sed rhoncus metus massa,
+                </p>
+
+                <hr class="subfeaturette-divider" />
+
+                <h2>News</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque ultricies venenatis.
+                    Phasellus eu urna sit amet mi cursus gravida. Pellentesque lectus leo, sollicitudin quis risus at,
+                    feugiat sollicitudin justo.
+                </p>
+
+                <h2>Leisure</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque ultricies venenatis.
+                    Phasellus eu urna sit amet mi cursus gravida. Pellentesque lectus leo, sollicitudin quis risus at,
+                    feugiat sollicitudin justo.
+                </p>
+
+                </div>
+
+            </div><!-- mainContent -->
+
+            <div class="footerContent">
+
+            </div> <!-- footerContent -->
+        </div>
+    </body>
+    <script src="javascripts/jquery-1.10.1.js"></script>
+    <script src="javascripts/angular.js"></script>
+    <script src="javascripts/ui-bootstrap-tpls-0.6.0.js"></script>
+    <script src="app/main.js"></script>
+</html>
